@@ -1,5 +1,7 @@
 // Exercise 1: Calculate the Sum of Two Numbers
 
+
+-- START --
 a + b = c
 
 num1 + num2 = sum
@@ -9,17 +11,35 @@ ask for 2 numbers
 add the 2 number together 
 print on the screen the sum of those 2 numbers
 
+-- END --
 
 // Exercise 2: Check if a Number is Even or Odd
 
+-- START --
 value = input
-if input % 2 is 0
+if input % 2 == 0
     print value is even.
 else 
     print value is odd.
+-- END --
+
 
 // Exercise 3: 
 Write pseudo code that will perform the following.    
 
 a) Read in 5 separate numbers.   
 b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
+d) Write out the results found from steps b and c with a message describing what they are
+
+-- START --
+MAX_READ_NUMBERS = 5
+accumulator = 0
+
+for i = 0; i < MAX_READ_NUMBERS; i++
+    entry = input
+    accumulator += entry
+-- END --
+
+average = accumulator/MAX_READ_NUMBERS
+print(average)
