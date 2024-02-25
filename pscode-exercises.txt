@@ -10,7 +10,6 @@ print sum
 ask for 2 numbers 
 add the 2 number together 
 print on the screen the sum of those 2 numbers
-
 -- END --
 
 // Exercise 2: Check if a Number is Even or Odd
@@ -35,11 +34,19 @@ d) Write out the results found from steps b and c with a message describing what
 -- START --
 MAX_READ_NUMBERS = 5
 accumulator = 0
-
+max = 0
+min = 0
 for i = 0; i < MAX_READ_NUMBERS; i++
     entry = input
+    if entry < min 
+        min = entry
+    if entry > max
+        max = entry
     accumulator += entry
+    
+average = accumulator/MAX_READ_NUMBERS
+print("Min: " + min)
+print("Max: " + max)
+print("Average: " + average)
 -- END --
 
-average = accumulator/MAX_READ_NUMBERS
-print(average)
